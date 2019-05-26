@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add to do item</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="itemTitleInput">Enter items title</label>
+            <input type="text" id="itemTitleInput" autofocus>
+        </div>
+        <button type="submit">Add item</button>
+    </form>
+
+    <script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', submitform);
+
+        const submitform = (e) => {
+            e.preventDefault;
+            console.log(123);
+        };
+    </script>
+</body>
+</html>
